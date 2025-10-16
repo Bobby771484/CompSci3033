@@ -26,14 +26,16 @@ public:
     Single_Linked_List(const Single_Linked_List&) = delete;
     Single_Linked_List& operator=(const Single_Linked_List&) = delete;
 
-    void push_front(const Item_Type& item);
-    void push_back(const Item_Type& item);
-    void pop_front();
-    void pop_back();
-    Item_Type front() const;
-    Item_Type back() const;
-    bool empty() const { return num_items == 0; }
+    // core operations
 
+    void push_front(const Item_Type& item); //add a element to the front
+    void push_back(const Item_Type& item); // add a element to the end
+    void pop_front(); // remove the first element
+    void pop_back(); // remove the last element
+    Item_Type front() const; // return the value at the head
+    Item_Type back() const; // return the value at the tail
+    bool empty() const { return num_items == 0; }
+    // index based operations meant to insert or remove at a certain index.
     void insert(std::size_t index, const Item_Type& item);
     bool remove(std::size_t index);
     std::size_t find(const Item_Type& item) const;
