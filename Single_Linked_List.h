@@ -3,10 +3,15 @@
 
 #include <cstddef>
 #include <stdexcept>
-
+//Singly linked list class template 
+// stores items in nodes that point to the next node
+// each node has a pointer and a  data value with the pointer pointing to the next one
+// Supporting basic list operations like adding, removing
+// inserting and finding elements by index or value.
 template <typename Item_Type>
 class Single_Linked_List {
-private:
+private: // Node structure used in the list
+ // each node has a piece of data and pointer to the next node
     struct Node {
         Item_Type data;
         Node* next;
@@ -14,13 +19,13 @@ private:
             : data(d), next(n) {}
     };
 
-    Node* head;
-    Node* tail;
-    std::size_t num_items;
+    Node* head; // points to the first node
+    Node* tail; // points to the last node
+    std::size_t num_items; // says how many elements are in the list
 
 public:
-    Single_Linked_List();
-    ~Single_Linked_List();
+    Single_Linked_List(); // makes an empty list
+    ~Single_Linked_List(); // deletes all nodes
 
     // Disable copy for simplicity
     Single_Linked_List(const Single_Linked_List&) = delete;
@@ -35,10 +40,11 @@ public:
     Item_Type front() const; // return the value at the head
     Item_Type back() const; // return the value at the tail
     bool empty() const { return num_items == 0; }
-    // index based operations meant to insert or remove at a certain index.
+    // inserts or removes elements at a specific position
     void insert(std::size_t index, const Item_Type& item);
     bool remove(std::size_t index);
     std::size_t find(const Item_Type& item) const;
+   // returns how many elements are in the list. 
     std::size_t size() const { return num_items; }
 };
 
