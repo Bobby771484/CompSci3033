@@ -15,7 +15,7 @@ public:
     void pop(); //Removes the value at the top of the vector
     int top() const; // displays what number is at the top 
     double average() const; // takes the average of all the values in the vector added up and then divided
-    std::size_t size() const; // Returns the size of the vector itself feasfaseffe
+    std::size_t size() const; // Returns the size of the vector itself 
 };
 
 #endif
