@@ -13,3 +13,7 @@ The next one was the inserting at a specfic point in the linked list itself
 causing the size to go to 4 from 3
 <img width="343" height="32" alt="Screenshot 2025-10-15 231236" src="https://github.com/user-attachments/assets/1d250fad-90e4-48b1-b229-53b90c88c0a9" />
 <img width="913" height="283" alt="Screenshot 2025-10-15 231346" src="https://github.com/user-attachments/assets/765e9754-db5b-4e65-bdf2-363afc5e61b4" />
+The next command that was tried was the find command where it found the location of a value in the linked list itself as shown it found the value 20 at the index of 3
+<img width="322" height="83" alt="Screenshot 2025-10-15 231619" src="https://github.com/user-attachments/assets/24d36976-59f5-4582-8f6f-1ac00a286c4d" />
+<img width="872" height="311" alt="Screenshot 2025-10-15 231737" src="https://github.com/user-attachments/assets/43a4c4b4-b8bf-4167-8492-a860efd63b40" />
+
